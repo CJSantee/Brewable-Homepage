@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  Routes,
+  Route
+} from 'react-router-dom';
+import Home from './Home';
+import Privacy from './Privacy';
 
 function App() {
   return (
-    <div>
-      <p>Test Deployment</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/privacy" element={<Privacy/>}/>
+    </Routes>
   );
 }
 
