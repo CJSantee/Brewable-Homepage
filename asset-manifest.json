@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.244d7826.chunk.js",
-    "main.js.map": "/static/js/main.244d7826.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fe0fcaa9.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fe0fcaa9.js.map",
-    "static/js/2.e23b72fd.chunk.js": "/static/js/2.e23b72fd.chunk.js",
-    "static/js/2.e23b72fd.chunk.js.map": "/static/js/2.e23b72fd.chunk.js.map",
-    "static/js/3.9fa0ddf7.chunk.js": "/static/js/3.9fa0ddf7.chunk.js",
-    "static/js/3.9fa0ddf7.chunk.js.map": "/static/js/3.9fa0ddf7.chunk.js.map",
+    "main.css": "/static/css/main.4395ebd7.chunk.css",
+    "main.js": "/static/js/main.9d5456f2.chunk.js",
+    "main.js.map": "/static/js/main.9d5456f2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.46a823e7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.46a823e7.js.map",
+    "static/js/2.9bdc3646.chunk.js": "/static/js/2.9bdc3646.chunk.js",
+    "static/js/2.9bdc3646.chunk.js.map": "/static/js/2.9bdc3646.chunk.js.map",
+    "static/js/3.d493d400.chunk.js": "/static/js/3.d493d400.chunk.js",
+    "static/js/3.d493d400.chunk.js.map": "/static/js/3.d493d400.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.e23b72fd.chunk.js.LICENSE.txt": "/static/js/2.e23b72fd.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "static/css/main.4395ebd7.chunk.css.map": "/static/css/main.4395ebd7.chunk.css.map",
+    "static/js/2.9bdc3646.chunk.js.LICENSE.txt": "/static/js/2.9bdc3646.chunk.js.LICENSE.txt",
+    "static/media/Download_on_the_App_Store_Badge_blk.8c4986ee.svg": "/static/media/Download_on_the_App_Store_Badge_blk.8c4986ee.svg",
+    "static/media/iPhone13-Beans.7c53f40a.png": "/static/media/iPhone13-Beans.7c53f40a.png",
+    "static/media/iPhone13-Brew-Dark.e9a1fa52.png": "/static/media/iPhone13-Brew-Dark.e9a1fa52.png",
+    "static/media/iPhone13-MyCollection.38181111.png": "/static/media/iPhone13-MyCollection.38181111.png",
+    "static/media/iPhone13-Suggestions-Dark.f5e155f3.png": "/static/media/iPhone13-Suggestions-Dark.f5e155f3.png",
+    "static/media/icon-round.4445a66d.png": "/static/media/icon-round.4445a66d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe0fcaa9.js",
-    "static/js/2.e23b72fd.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.244d7826.chunk.js"
+    "static/js/runtime-main.46a823e7.js",
+    "static/js/2.9bdc3646.chunk.js",
+    "static/css/main.4395ebd7.chunk.css",
+    "static/js/main.9d5456f2.chunk.js"
   ]
 }
