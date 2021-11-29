@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/brewable-homepage/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/brewable-homepage/static/js/main.2933e357.chunk.js",
-    "main.js.map": "/brewable-homepage/static/js/main.2933e357.chunk.js.map",
+    "main.js": "/brewable-homepage/static/js/main.244d7826.chunk.js",
+    "main.js.map": "/brewable-homepage/static/js/main.244d7826.chunk.js.map",
     "runtime-main.js": "/brewable-homepage/static/js/runtime-main.5b724571.js",
     "runtime-main.js.map": "/brewable-homepage/static/js/runtime-main.5b724571.js.map",
-    "static/js/2.c87d1b89.chunk.js": "/brewable-homepage/static/js/2.c87d1b89.chunk.js",
-    "static/js/2.c87d1b89.chunk.js.map": "/brewable-homepage/static/js/2.c87d1b89.chunk.js.map",
+    "static/js/2.e23b72fd.chunk.js": "/brewable-homepage/static/js/2.e23b72fd.chunk.js",
+    "static/js/2.e23b72fd.chunk.js.map": "/brewable-homepage/static/js/2.e23b72fd.chunk.js.map",
     "static/js/3.9fa0ddf7.chunk.js": "/brewable-homepage/static/js/3.9fa0ddf7.chunk.js",
     "static/js/3.9fa0ddf7.chunk.js.map": "/brewable-homepage/static/js/3.9fa0ddf7.chunk.js.map",
     "index.html": "/brewable-homepage/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/brewable-homepage/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.c87d1b89.chunk.js.LICENSE.txt": "/brewable-homepage/static/js/2.c87d1b89.chunk.js.LICENSE.txt",
+    "static/js/2.e23b72fd.chunk.js.LICENSE.txt": "/brewable-homepage/static/js/2.e23b72fd.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/brewable-homepage/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5b724571.js",
-    "static/js/2.c87d1b89.chunk.js",
+    "static/js/2.e23b72fd.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.2933e357.chunk.js"
+    "static/js/main.244d7826.chunk.js"
   ]
 }
