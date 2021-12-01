@@ -25,7 +25,9 @@ function Home() {
                 <li>&#128248; Share photos of your beans and brews.</li>
                 <li>&#9200; Set daily reminders for brewing.</li>
                 </ul>
-                <img className="app-store" src={AppStore} alt="Download on the App Store" width={200}/>
+                <a href="https://apps.apple.com/us/app/brewable/id1592801332">
+                    <img className="app-store" src={AppStore} alt="Download on the App Store" width={200}/>
+                </a>
             </div>
 
             <div className="screenshots">
