@@ -1,10 +1,13 @@
-import MyColleciton from './assets/screenshots/iPhone13-MyCollection.png';
-import Beans from './assets/screenshots/iPhone13-Beans.png';
-import Brew from './assets/screenshots/iPhone13-Brew-Dark.png';
-import Suggestions from './assets/screenshots/iPhone13-Suggestions-Dark.png';
-import AppStore from './assets/Download_on_the_App_Store_Badge_blk.svg';
-import GitHub from './assets/GitHub.png';
-import AppIcon from './assets/icon-round.png';
+// Assets
+import MyColleciton from '../assets/screenshots/iPhone13-MyCollection.png';
+import Beans from '../assets/screenshots/iPhone13-Beans.png';
+import Brew from '../assets/screenshots/iPhone13-Brew-Dark.png';
+import Suggestions from '../assets/screenshots/iPhone13-Suggestions-Dark.png';
+import AppStore from '../assets/Download_on_the_App_Store_Badge_blk.svg';
+import GitHub from '../assets/GitHub.png';
+import AppIcon from '../assets/icon-round.png';
+
+// Components
 import { Link } from 'react-router-dom';
 
 function Home() {
