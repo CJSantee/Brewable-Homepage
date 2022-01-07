@@ -1,14 +1,17 @@
-
+// Libraries
 import * as Yup from 'yup';
-
+import axios from 'axios';
+import { Formik } from 'formik';
+// Components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
-import { Formik } from 'formik';
+// Hooks
 import { useState } from 'react';
+// Constants
+import { API_URL } from '../config/config';
 
 const schema = Yup.object().shape({
     username: Yup.string()
@@ -27,6 +30,20 @@ const schema = Yup.object().shape({
 function Login() {
     const [showPassword, setShowPassword] = useState(false);
 
+    const login = values => {
+        axios.post(API_URL+'/login', values)
+        .then(res => {
+            const parseRes = res.data;
+            if (parseRes.token) {
+                localStorage.setItem("token", parseRes.token);
+                alert("Logged In!");
+            }
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    }
+
     return (
         <Container>
             <Row className="">
@@ -36,7 +53,7 @@ function Login() {
                         validationSchema={schema}
                         onSubmit={(values, actions) => {
                             setTimeout(() => {
-                                alert(JSON.stringify(values));
+                                login(values);
                                 actions.setSubmitting(false);
                             }, 1000)
                         }}
