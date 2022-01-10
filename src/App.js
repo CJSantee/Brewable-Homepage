@@ -1,27 +1,57 @@
 import './styles/App.css';
 import './styles/App.scss';
 
+import React from 'react';
+
 import {
   Routes,
-  Route
+  Route,
+  Link,
+  Outlet,
 } from 'react-router-dom';
+
+import Container from 'react-bootstrap/Container';
 
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
-import SignUp from './pages/SignUp';
-import Login from './pages/Login';
+import SignUpPage from './pages/SignUpPage';
+import LoginPage from './pages/LoginPage';
 import Users from './pages/Users';
+import AuthProvider, { AuthRoute } from './utils/Auth';
 
-function App() {
+export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/privacy" element={<Privacy/>}/>
-      <Route path="/signup" element={<SignUp/>}/>
-      <Route path="/login" element={<Login/>}/>
-      <Route path="/users" element={<Users/>}/>
-    </Routes>
+    <AuthProvider>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />}/>
+          <Route path="/login" element={<LoginPage />}/>
+          <Route path="/signup" element={<SignUpPage />}/>
+          <Route 
+            path="/users" 
+            element={
+              <AuthRoute>
+                <Users />
+              </AuthRoute>
+            }/>
+        </Route>
+      </Routes>
+    </AuthProvider>
   );
 }
 
-export default App;
+function Layout() {
+  return (
+    <Container>
+      <ul>
+        <li>
+          <Link to="/">Public Page</Link>
+        </li>
+        <li>
+          <Link to="/users">Users</Link>
+        </li>
+      </ul>
+      <Outlet />
+    </Container>
+  );
+}

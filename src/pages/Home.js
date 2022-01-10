@@ -45,7 +45,7 @@ function Home() {
             <div className="footer">
             <a href="https://github.com/CJSantee/Brewable">
             Developed by
-                <span class="github">
+                <span className="github">
                 <img src={GitHub} alt="GitHub Logo" width={16} height={16} />
                 </span>Colin Santee
             </a>

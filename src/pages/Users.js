@@ -8,16 +8,21 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 // Constants
 import { API_URL } from '../config/config';
+import { getAuthHeaders } from '../utils/Auth';
 
 function Users() {
     const [users, setUsers] = useState([]);
 
+    const onDelete = (id) => {
+        let config = getAuthHeaders();
+        axios.delete(API_URL+"/users/"+id, config)
+        .then(
+            setUsers(users.filter(user => user.id !== id))
+        );
+    }
+
     useEffect(() => {
-        let config = {
-            headers: {
-                Authorization: localStorage.getItem("token")
-            }
-        }
+        let config = getAuthHeaders(); // Gets header with auth token
         let mounted = true;
         axios.get(API_URL+'/users', config)
         .then(res => {
@@ -45,7 +50,7 @@ function Users() {
                             <td>{user.email}</td>
                             <td className='d-flex justify-content-evenly'>
                                 <Button variant="outline-primary"> Update</Button>
-                                <Button variant="outline-danger">Delete</Button>    
+                                <Button variant="outline-danger" onClick={() => onDelete(user.id)}>Delete</Button>    
                             </td>
                         </tr>
                     ))}
