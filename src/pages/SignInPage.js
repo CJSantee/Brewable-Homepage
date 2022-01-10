@@ -27,7 +27,7 @@ const schema = Yup.object().shape({
         .required(),
 });
 
-export default function LoginPage() {
+export default function SignInPage() {
     const [showPassword, setShowPassword] = useState(false);
     const togglePassword = () => { setShowPassword(!showPassword) }
     let navigate = useNavigate();

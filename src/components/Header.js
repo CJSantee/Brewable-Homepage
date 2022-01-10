@@ -32,7 +32,7 @@ export default function Header() {
                     </NavDropdown>
                     :<Nav>
                         <Nav.Item>
-                            <Nav.Link onClick={() => navigate("/login")}>Sign In</Nav.Link>
+                            <Nav.Link onClick={() => navigate("/signin")}>Sign In</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link onClick={() => navigate("/signup")}>Sign Up</Nav.Link>
