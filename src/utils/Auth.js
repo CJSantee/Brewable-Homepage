@@ -62,7 +62,7 @@ const authProvider = {
             console.log(err);
         });
         authProvider.isAuthenticated = true;
-        setTimeout(callback, 100); // fake async
+        callback();
     },
     signin(formValues, callback) {
         axios.post(API_URL+'/login', formValues)
@@ -77,18 +77,21 @@ const authProvider = {
             console.log(err);
         });
         authProvider.isAuthenticated = true;
-        setTimeout(callback, 100); // fake async
+        callback();
     },
     signout(callback) {
         authProvider.isAuthenticated = false;
-        setTimeout(callback, 100);
+        localStorage.removeItem("token");
+        callback();
     }
 }
 
+// Hook for Authentication Context
 function useAuth() {
     return React.useContext(AuthContext);
 }
 
+// Protected Route Component
 function AuthRoute({ children }) {
     let auth = useAuth();
     let location = useLocation();

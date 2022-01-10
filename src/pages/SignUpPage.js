@@ -52,10 +52,8 @@ export default function SignUpPage() {
                     <Formik
                         validationSchema={schema}
                         onSubmit={(values, actions) => {
-                            setTimeout(() => {
-                                signup(values);
-                                actions.setSubmitting(false);
-                            }, 1000)
+                            signup(values);
+                            actions.setSubmitting(false);
                         }}
                         initialValues={{
                             username: '',

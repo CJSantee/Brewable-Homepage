@@ -51,10 +51,8 @@ export default function LoginPage() {
                     <Formik
                         validationSchema={schema}
                         onSubmit={(values, actions) => {
-                            setTimeout(() => {
-                                login(values);
-                                actions.setSubmitting(false);
-                            }, 1000)
+                            login(values);
+                            actions.setSubmitting(false);
                         }}
                         initialValues={{
                             emailOrUsername: '',
@@ -103,8 +101,8 @@ export default function LoginPage() {
                         </Form>
                     )}
                     </Formik>
-                    <p>Forgot password? <Link to="/">Reset</Link></p>
-                    <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+                    <p className='text-center'>Forgot password? <Link to="/">Reset</Link></p>
+                    <p className='text-center'>Don't have an account? <Link to="/signup">Sign Up</Link></p>
                 </Col>
                 <Col md />
             </Row>
